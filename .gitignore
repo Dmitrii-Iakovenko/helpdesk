@@ -1,0 +1,13 @@
+### Back + IDEA ###
+back/.gradle/
+back/.idea/
+back/gradlew
+back/gradlew.bat
+back/build/
+back/gradle/
+back/sql/
+front/img_temp/
+
+
+# ### Front + VSCode ###
+front/node_modules/
