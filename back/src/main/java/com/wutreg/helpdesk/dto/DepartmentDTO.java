@@ -1,8 +1,6 @@
 package com.wutreg.helpdesk.dto;
 
 
-import com.wutreg.helpdesk.entity.Department;
-
 public class DepartmentDTO {
     private Long department_id;
     private String name;

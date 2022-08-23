@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @RestController
@@ -24,11 +25,15 @@ public class DepartmentController {
     @GetMapping
     public List<DepartmentDTO> getAll() {
         return departmentService.getAll().stream()
-            .map(DepartmentController::convertToDto)
+            .map(DepartmentController::convertToDto) //TODO: надо вынести в MapStruct
             .collect(Collectors.toList());
     }
 
-//    @GetMapping("{id}")
+    @GetMapping("{id}")
+    public DepartmentDTO getById(@PathVariable long id) {
+        Department department = departmentService.getDepartment(id);
+        return convertToDto(department);
+    }
 
     @PostMapping
     public DepartmentDTO add(@RequestBody DepartmentDTO departmentDTO) {
@@ -36,6 +41,27 @@ public class DepartmentController {
         department = departmentService.save(department);
         return convertToDto(department);
     }
+
+    @PutMapping
+    // TODO: не работает
+    public DepartmentDTO update(@RequestBody DepartmentDTO departmentDTO) {
+        Department department = convertToEntity(departmentDTO);
+        department = departmentService.save(department);
+        return convertToDto(department);
+    }
+
+    @DeleteMapping("{id}")
+    public String delete(@PathVariable long id) {
+        Department department = departmentService.getDepartment(id);
+        if (Objects.isNull(department)) {
+            String errorMessage = "There is no department with Id = " + id + " in Database";
+            throw new RuntimeException(errorMessage); // TODO: нужен нормальный ExceptionHandler
+        }
+
+        departmentService.delete(department);
+        return "Department with Id = " + id + " was delete";
+    }
+
 
     private static DepartmentDTO convertToDto(Department department) {
         DepartmentDTO dto = new DepartmentDTO();

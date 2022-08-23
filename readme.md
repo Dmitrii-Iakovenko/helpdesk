@@ -2,10 +2,32 @@
 awdesk.atlassian.net
 
 
+## BackEnd
+
+**Stack:**
+1. Java 17
+2. Gradle 7.2
+3. Postgres
+4. Spring Boot, JPA, MVC
+
+
+**Initialization:**
+1. Add DB in Postgres (application.yml)
+2. Add Data Source in IDEA
+3. Run init.sql
+4. Run HelpdeskApplication Spring Boot
+
+
+
 ## Front
 
-### DepartmentsList
-С бека приходит список департаментов, 
-где каждый элемент списка - название организации (parent_id = 0). 
+**Stack:**
+1. Vue 3
+2. Vite 3
+3. Tailwind
 
-А уже в организацию входят дети, которые отображаются со смещением вправо
+
+**Initialization:**
+1. cd front
+2. npm i
+3. npm run dev

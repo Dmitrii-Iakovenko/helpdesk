@@ -3,7 +3,9 @@
         <h2>Список департаментов:</h2>
         <div class="p-2.5 border rounded border-grid"
             v-for="department in departments" :key="department.department_id">
+            [ID: {{ department.department_id}}]
             {{ department.name }}
+            (parent: {{department.parent_id}})
         </div>
     </div>
 </template>

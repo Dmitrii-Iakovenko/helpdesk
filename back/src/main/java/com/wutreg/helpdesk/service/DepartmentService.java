@@ -13,7 +13,16 @@ public record DepartmentService(DepartmentRepository repository) {
         return repository.findAll();
     }
 
+    // TODO: тупые названия
+    public Department getDepartment(long id) {
+        return repository.getReferenceById(id);
+    }
+
     public Department save(Department department) {
         return repository.save(department);
+    }
+
+    public void delete(Department department) {
+        repository.delete(department);
     }
 }
