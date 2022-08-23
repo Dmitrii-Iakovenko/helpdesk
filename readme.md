@@ -1,3 +1,7 @@
+## Jira
+awdesk.atlassian.net
+
+
 ## Front
 
 ### DepartmentsList
