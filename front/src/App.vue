@@ -1,16 +1,16 @@
 <template>
-  <departments-list />
+  <department-tree />
 </template>
 
 
 <script>
-import DepartmentsList from './components/DepartmentsList.vue'
+import DepartmentTree from './components/DepartmentTree.vue'
 
 export default {
   name: "App",
 
   components: {
-    DepartmentsList
+    DepartmentTree
   },
 
   data() {
