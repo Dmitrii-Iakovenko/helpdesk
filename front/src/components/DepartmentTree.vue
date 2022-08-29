@@ -18,13 +18,18 @@ export default {
     data() {
         return {
             departments: [],
+            employees: []
         }
     },
 
     mounted() {
-        fetch("http://localhost:8080/api/v1/departments")
+        const BACKEND_API_HOST_PORT = import.meta.env.VITE_BACKEND_API_HOST_PORT;
+        fetch(BACKEND_API_HOST_PORT + 'api/v1/employees')
             .then((response) => response.json())
-            .then((data) => this.departments = data);        
+            .then((data) => this.employees = data);        
+        fetch(BACKEND_API_HOST_PORT + 'api/v1/departments')
+            .then((response) => response.json())
+            .then((data) => this.departments = data);
     },
     
     computed: {
@@ -34,6 +39,7 @@ export default {
                 .filter(department => department.parent_id === 0);
             // select all Departments (childs)
             organizations.forEach(organization => organization.child = this.getAllChild(organization));
+            this.departments.forEach(department => department.employees = this.getAllEmployees(department));
             return organizations;
         }
     },
@@ -44,6 +50,11 @@ export default {
                 .filter(department => department.parent_id === organization.department_id);
             child.forEach(subChild => subChild.child = this.getAllChild(subChild));
             return child;
+        },
+
+        getAllEmployees(department) {
+            return this.employees
+                .filter(employee => employee.departmentId === department.department_id);
         }
     }
 

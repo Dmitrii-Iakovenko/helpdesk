@@ -14,7 +14,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/employees")
-@CrossOrigin(origins = "http://127.0.0.1:5173")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "http://127.0.0.1:5173")
 public class EmployeeController {
 
     private final EmployeeService employeeService;

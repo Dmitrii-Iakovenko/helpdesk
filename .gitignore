@@ -11,3 +11,5 @@ front/img_temp/
 
 # ### Front + VSCode ###
 front/node_modules/
+front/.env
+front/vite.config.js

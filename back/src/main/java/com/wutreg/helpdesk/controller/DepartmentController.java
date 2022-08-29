@@ -12,7 +12,8 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("api/v1/departments")
-@CrossOrigin(origins = "http://127.0.0.1:5173")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "http://127.0.0.1:5173")
 public class DepartmentController {
 
     private final DepartmentService departmentService;
