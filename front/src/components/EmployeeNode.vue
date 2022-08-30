@@ -1,12 +1,12 @@
 <template>
-    <tr  class="bg-white border dark:bg-gray-800 dark:border-gray-700">
-        <td class="py-4 px-6">{{ employee.jobPosition }}</td>
-        <td class="py-4 px-6">{{ employee.lastName }}</td>
-        <td class="py-4 px-6">{{ employee.cityPhone }}</td>
-        <td class="py-4 px-6">{{ employee.localPhone }}</td>
-        <td class="py-4 px-6">{{ employee.workLocation }}</td>
-        <td class="py-4 px-6">{{ employee.mobilePhone }}</td>
-        <td class="py-4 px-6">{{ employee.email }}</td>
+    <tr>
+        <td class="py-0 px-2 border border-grid">{{ employee.jobPosition }}</td>
+        <td class="py-0 px-2 border border-grid">{{ employee.lastName }} {{ employee.firstName }} {{ employee.middleName }}</td>
+        <td class="py-0 px-2 border border-grid">{{ employee.cityPhone }}</td>
+        <td class="py-0 px-2 border border-grid">{{ employee.localPhone }}</td>
+        <td class="py-0 px-2 border border-grid">{{ employee.workLocation }}</td>
+        <td class="py-0 px-2 border border-grid">{{ employee.mobilePhone }}</td>
+        <td class="py-0 px-2 border border-grid">{{ employee.email }}</td>
     </tr>
 </template>
 

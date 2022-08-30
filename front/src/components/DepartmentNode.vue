@@ -1,22 +1,25 @@
 <template>
-    <div class="space-y-2.5 p-2.5">
-        {{ department.name }}
-        <employee-list :employees="department.employees" />
-        <div class="p-2.5 border rounded border-grid"
-            v-for="child in department.child" :key="child.department_id">
-            <department-node :department="child" />
-        </div>
-    </div>
+    <tr><th class="pt-5 pb-2 px-5 border border-grid" colspan="7">{{ department.name }}</th></tr>
+    <employee-node 
+        v-for="employee in department.employees" 
+        :key="employee.employeeId" 
+        :employee="employee" 
+    />
+    <department-node 
+        v-for="child in department.child" 
+        :key="child.department_id"
+        :department="child"
+    />
 </template>
 
 
 <script>
-import EmployeeList from './EmployeeList.vue'
+import EmployeeNode from './EmployeeNode.vue'
 
 
 export default {
     components: {
-        EmployeeList
+        EmployeeNode
     },
 
     props: {

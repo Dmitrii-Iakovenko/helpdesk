@@ -1,10 +1,24 @@
 <template>
-    <div class="space-y-2.5 p-2.5">
-        <div class="p-2.5 border rounded border-grid"
-            v-for="organization in organizations" :key="organization.department_id">
-            <department-node :department="organization" />
-        </div>
-    </div>
+    <table class="w-full border border-grid">
+        <thead class="sticky top-0 bg-grid">
+            <tr>
+                <th>Должность</th>
+                <th>ФИО</th>
+                <th>Город</th>
+                <th>Внутренний</th>
+                <th>Кабинет</th>
+                <th>Мобильный</th>
+                <th>e-mail</th>
+            </tr>
+        </thead>        
+        <tbody class="text-sm">
+            <department-node 
+                v-for="organization in organizations"
+                :key="organization.department_id"
+                :department="organization" 
+            />
+        </tbody>
+    </table>
 </template>
 
 <script>
