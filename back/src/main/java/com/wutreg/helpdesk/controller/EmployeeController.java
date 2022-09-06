@@ -15,8 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/employees")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-//@CrossOrigin(origins = "http://127.0.0.1:5173")
-public class EmployeeController {
+public final class EmployeeController {
 
     private final EmployeeService employeeService;
 
@@ -27,7 +26,7 @@ public class EmployeeController {
 
     @GetMapping
     public List<EmployeeDTO> getAll() {
-        List<Employee> result = employeeService.getAll();
-        return EmployeeMapper.INSTANCE.map(result);
+        List<Employee> employees = employeeService.getAll();
+        return EmployeeMapper.INSTANCE.map(employees);
     }
 }

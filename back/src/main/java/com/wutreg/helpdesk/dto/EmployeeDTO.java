@@ -1,8 +1,10 @@
 package com.wutreg.helpdesk.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class EmployeeDTO {
     private Long employeeId;
     private String firstName;

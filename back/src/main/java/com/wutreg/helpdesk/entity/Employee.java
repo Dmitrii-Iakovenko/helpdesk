@@ -9,8 +9,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-//@RequiredArgsConstructor
-@ToString(of = {"id", "firsName", "lastName"})
+@AllArgsConstructor
+//@ToString(of = {"id", "firsName", "lastName"})
 @EqualsAndHashCode(of = {"id"})
 public class Employee {
 
