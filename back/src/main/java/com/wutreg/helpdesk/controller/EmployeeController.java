@@ -1,7 +1,7 @@
 package com.wutreg.helpdesk.controller;
 
 import com.wutreg.helpdesk.dto.EmployeeDTO;
-import com.wutreg.helpdesk.entity.Employee;
+import com.wutreg.helpdesk.model.Employee;
 import com.wutreg.helpdesk.mapper.EmployeeMapper;
 import com.wutreg.helpdesk.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;

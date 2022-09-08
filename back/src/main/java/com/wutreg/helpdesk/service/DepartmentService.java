@@ -1,6 +1,6 @@
 package com.wutreg.helpdesk.service;
 
-import com.wutreg.helpdesk.entity.Department;
+import com.wutreg.helpdesk.model.Department;
 import com.wutreg.helpdesk.repository.DepartmentRepository;
 import org.springframework.stereotype.Service;
 

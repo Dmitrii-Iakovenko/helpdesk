@@ -1,4 +1,4 @@
-package com.wutreg.helpdesk.entity;
+package com.wutreg.helpdesk.model;
 
 import lombok.*;
 

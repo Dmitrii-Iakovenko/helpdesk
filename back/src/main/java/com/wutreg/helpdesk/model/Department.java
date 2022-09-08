@@ -1,7 +1,6 @@
-package com.wutreg.helpdesk.entity;
+package com.wutreg.helpdesk.model;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerator;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;

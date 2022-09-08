@@ -1,7 +1,7 @@
 package com.wutreg.helpdesk.mapper;
 
 import com.wutreg.helpdesk.dto.EmployeeDTO;
-import com.wutreg.helpdesk.entity.Employee;
+import com.wutreg.helpdesk.model.Employee;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

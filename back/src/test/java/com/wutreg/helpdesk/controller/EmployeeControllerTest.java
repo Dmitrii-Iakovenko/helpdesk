@@ -2,7 +2,7 @@ package com.wutreg.helpdesk.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wutreg.helpdesk.dto.EmployeeDTO;
-import com.wutreg.helpdesk.entity.Employee;
+import com.wutreg.helpdesk.model.Employee;
 import com.wutreg.helpdesk.service.EmployeeService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

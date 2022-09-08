@@ -1,6 +1,6 @@
 package com.wutreg.helpdesk.service;
 
-import com.wutreg.helpdesk.entity.Employee;
+import com.wutreg.helpdesk.model.Employee;
 import com.wutreg.helpdesk.repository.EmployeeRepository;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

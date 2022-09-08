@@ -1,7 +1,7 @@
 package com.wutreg.helpdesk.controller;
 
 import com.wutreg.helpdesk.dto.DepartmentDTO;
-import com.wutreg.helpdesk.entity.Department;
+import com.wutreg.helpdesk.model.Department;
 import com.wutreg.helpdesk.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
