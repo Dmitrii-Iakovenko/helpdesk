@@ -24,7 +24,8 @@ awdesk.atlassian.net
 **Stack:**
 1. Vue 3
 2. Vite 3
-3. Tailwind
+3. Tailwind CSS
+4. Flowbite
 
 
 **Initialization:**

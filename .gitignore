@@ -13,3 +13,4 @@ front/img_temp/
 front/node_modules/
 front/.env
 front/vite.config.js
+front/dist
