@@ -1,6 +1,6 @@
 <template>
   <nav-bar />
-  <department-tree />
+  <!-- <department-tree /> -->
 </template>
 
 
