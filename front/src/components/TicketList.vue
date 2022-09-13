@@ -1,5 +1,179 @@
 <template>
-    <ticket_list>
+    <ticket_table>
+        <ticket_table_head class="bg-white dark:bg-gray-900">
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+        </ticket_table_head>
+        <ticket_table_body>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+            <ticket_table_row>
+                <ticket_table_cell>Дата/Время</ticket_table_cell>
+                <ticket_table_cell>У кого проблема</ticket_table_cell>
+                <ticket_table_cell>Описание проблемы</ticket_table_cell>
+                <ticket_table_cell>Кто решает проблему</ticket_table_cell>
+            </ticket_table_row>
+
+        </ticket_table_body>
+        <ticket_table_footer>
+
+        </ticket_table_footer>
+    </ticket_table>
+
+
+    <!-- <ticket_list>
         <TicketNode 
             v-for="ticket in tickets"
             :key="ticket.id"
@@ -20,7 +194,7 @@
             :key="ticket.id"
             :ticket="ticket"
         />
-    </ticket_list>
+    </ticket_list> -->
 </template>
 
 <script>
@@ -52,5 +226,29 @@ ticket_list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+ticket_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 10px black;
+}
+
+ticket_table_head {
+    position: sticky;
+    top: 73px;
+    font-size: 24px;
+    /* background-color: bg-white dark:bg-gray-900; */
+}
+
+ticket_table_row {
+    display: flex;
+    flex-direction: row;
+}
+
+ticket_table_cell {
+    width: 100%;
+    flex: 1 1 auto;
 }
 </style>
